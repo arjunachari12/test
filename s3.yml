@@ -1,0 +1,9 @@
+Parameters:
+  BucketName:
+    Description: Enter bucket name
+    Type: String
+Resources:
+  MyS3Bucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: !Ref BucketName
